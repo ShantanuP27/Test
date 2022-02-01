@@ -20,7 +20,7 @@ public class Cityfilter {
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/orders","root","shantanu");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/orders","root","root");
 			st=con.createStatement();
 			rs=st.executeQuery(sql);
 			while(rs.next()) {
