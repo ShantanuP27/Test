@@ -23,7 +23,7 @@ public class Shipping {
 	
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/orders","root","shantanu");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/orders","root","root");
 			
 			stt=con.createStatement();
 			rs = stt.executeQuery( " select cid from purchase where pid = " + pid );
