@@ -12,7 +12,7 @@ public class Create {
 		String sql3 = "create table shipping(cid int,pid int,address varchar(50),city varchar(20),pincode int)";
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/orders","root","shantanu");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/orders","root","root");
 			st=con.createStatement();
 	
 			st.execute(sql1);
